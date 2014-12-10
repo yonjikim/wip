@@ -1,5 +1,6 @@
-/* Default */
+/* Mobile First */
 
+/* STRUCTURE */
 body {
 	padding: 0;
 	margin: 0;
@@ -30,12 +31,59 @@ img {
   z-index: -99;
 }
 
-/* Specifics */
+/* CONTENT STYLING */
 
 header {
-	padding-top: 40px;
-	padding-left: 40px;
-	color: white;
+	padding-top: 25px;
+	padding-left: 10px;
+	font-weight: 100;
+	letter-spacing: 3px;
+}
+
+header h1 {
+	text-align: center;
+	font-family: Futura;
+	font-weight: 200;
+	font-size: 50px;
+	text-transform: uppercase;
+	width: 100%;
+	padding-top: 45%;
+	margin: auto;
+}
+
+.connect {
+	position: absolute;
+	bottom: 20px;
+	width: 100%;
+	left: 0;
+	text-align: center;
+	display: block;
+}
+
+.connect #chat {
+	display: none;
+
+}
+
+.connect span {
+	display: block;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	padding-left: 0px;
+	margin-left: 0px;
+	font-size: 15px;
+	line-height: 200%;
+
+}
+
+
+
+/* Dem Big Screens Doe */
+
+@media screen and (min-width: 768px) {
+
+header {
+	padding: 40px;
 	font-weight: 100;
 	letter-spacing: 3px;
 }
@@ -51,26 +99,25 @@ header h1 {
 	margin: auto;
 }
 
-.connect {
-	position: absolute;
-	bottom: 30px;
-	width: 100%;
-	left: 0;
-	text-align: center;
+.connect #chat {
 	display: block;
+	padding-bottom: 10px;
+	padding-left: 0px;
+	font-size: 20px;
+	text-transform: none;
+	font-family: Georgia, serif;
+	letter-spacing: 3px;
+	line-height: 400%;
 }
 
 .connect span {
-	letter-spacing: 3px;
-	text-transform: uppercase;
-	padding-left: 0px;
+	display: inline;
+	padding-right: 40px;
 	margin-left: 0px;
+	font-size: 15px;
+	line-height: 200%;
+
 }
 
-.connect #chat {
-	display: block;
-	font-weight: 100;
-	letter-spacing: 2px;
-	padding-bottom: 10px;
 
 }
